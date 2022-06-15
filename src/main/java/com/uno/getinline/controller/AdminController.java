@@ -19,6 +19,7 @@ import java.util.Map;
 @Controller
 public class AdminController {
 
+    //@RequestParam 생략하면 required=false 라는 뜻
     @GetMapping("/places")
     public ModelAndView adminPlaces(
             PlaceType placeType,
